@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.navbar {
+    position: relative; 
+    top: 0;
+    width: 100%;
+    background-color:  #333333;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#56c6af;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+.slider-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    top: 0;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 520px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.slide.active {
+    transform: translateX(0);
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.prev-slide,
+.next-slide {
+    margin: 0 10px;
+}
+
+.dots-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -230px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active-dot {
+    background-color: #b3c95b;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
